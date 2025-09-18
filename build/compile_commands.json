@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/bai-yu/C-RedBlackTree/build",
-  "command": "/usr/bin/gcc -DRBTree_EXPORTS -I/home/bai-yu/C-RedBlackTree/include -g -fPIC -std=gnu11 -o CMakeFiles/RBTree.dir/src/RBTree.c.o -c /home/bai-yu/C-RedBlackTree/src/RBTree.c",
-  "file": "/home/bai-yu/C-RedBlackTree/src/RBTree.c"
-}
-]

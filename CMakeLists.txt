@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.25.1)
+
+project(RBTree LANGUAGES C CXX )
+
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/RBTree.c)
+add_library(RBTree SHARED ${SRC_DIR})
+target_include_directories(RBTree PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+install(TARGETS RBTree EXPORT RBTreeTargets  LIBRARY DESTINATION lib RUNTIME DESTINATION bin)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include DESTINATION include)

@@ -8,6 +8,7 @@
 cmake ..
 cmake --build .
 cmake -DCMAKE_INSTALL_PREFIX=`pwd`/install .
+make install
 ```
 
 #### 4.install目录下就是你的编译好的内容
